@@ -1,6 +1,5 @@
 # 🚀 Promptify - AI Prompt Engineering Tool
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/IleshDevX/Promptify.svg)](https://github.com/IleshDevX/Promptify/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/IleshDevX/Promptify.svg)](https://github.com/IleshDevX/Promptify/network)
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/IleshDevX)
@@ -215,7 +214,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🌐 Portfolio: [IleshDevX.com](https://ileshdevx.com)
 - 🐦 Twitter: [@Ilesh_009](https://twitter.com/Ilesh_009)
 - 💼 LinkedIn: [ileshdevx](https://linkedin.com/in/ileshdevx)
-- 📧 Email: contact@ileshdevx.com
+- 📧 Email: [Ilesh](ilesh666@gmail.com)
 - 🎥 YouTube: [@ileshpatel666](https://youtube.com/@ileshpatel666)
 
 ## 🙏 Acknowledgments
