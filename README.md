@@ -21,7 +21,7 @@
 
 ## 🚀 Demo
 
-🔗 **Live Demo**: [https://promptify-demo.vercel.app](https://your-demo-link.com)
+🔗 **Live Demo**: [https://promptify-demo.app](https://promptify-engine.netlify.app/)
 
 ### Before & After Example
 
