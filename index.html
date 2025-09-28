@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Promptify | Turn Any Prompt into a Powerful AI Command</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-logo">Promptify</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#examples" class="nav-link">Examples</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-container container">
+                <div class="floating-elements">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                </div>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1 class="hero-title gsap-hero-title">Turn Any Prompt into a <span class="gradient-text">Powerful AI Command</span></h1>
+                        <p class="hero-subtitle gsap-hero-subtitle">Transform your simple prompts into professional, detailed instructions that get better results from any AI tool. Used by 50,000+ professionals worldwide.</p>
+                    </div>
+                    <div class="hero-demo gsap-hero-demo-section">
+                        <div class="demo-card demo-before gsap-mockup-before">
+                            <div class="demo-label">Before</div>
+                            <div class="demo-text">"Write about dogs"</div>
+                        </div>
+                        <div class="demo-arrow">↓</div>
+                        <div class="demo-card demo-after gsap-mockup-after">
+                            <div class="demo-label">After</div>
+                            <div class="demo-text">"Write a comprehensive 500-word article about dog breeds, focusing on temperament, care requirements, and suitability for families. Include specific examples and use an engaging, informative tone."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="editor-section" id="editor">
+            <div class="container">
+                <h2 class="section-title gsap-section-title">The <span class="gradient-text">Promptify</span> Engine</h2>
+                 <p class="section-subtitle gsap-section-subtitle">Enter your prompt below and see the magic happen.</p>
+                <div class="editor-tool gsap-editor-tool">
+                    <div class="editor-input-area gsap-input-area">
+                        <textarea id="prompt-input" placeholder="e.g., 'give me marketing ideas for a new coffee shop'"></textarea>
+                        <div class="editor-controls">
+                            <div class="select-wrapper">
+                                <select id="prompt-style">
+                                    <option value="professional">Professional</option>
+                                    <option value="creative">Creative</option>
+                                    <option value="casual">Casual</option>
+                                    <option value="technical">Technical</option>
+                                </select>
+                            </div>
+                            <button id="improve-btn" class="button pulse-animation">Improve Prompt</button>
+                        </div>
+                    </div>
+                    <div class="editor-output-area">
+                        <div id="original-output" class="output-card gsap-output-left">
+                            <h3>Original Prompt</h3>
+                            <pre></pre>
+                        </div>
+                        <div id="improved-output" class="output-card gsap-output-right">
+                            <h3>Improved Prompt</h3>
+                            <pre></pre>
+                            <button id="copy-btn" class="copy-button" title="Copy to Clipboard">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="features">
+            <div class="container">
+                <h2 class="section-title gsap-features-title">Fine-Tuned for <span class="gradient-text">Perfection</span></h2>
+                <p class="section-subtitle gsap-features-subtitle">Go beyond simple rewording. Our engine analyzes context, intent, and clarity.</p>
+                <div class="features-grid">
+                    <div class="feature-card gsap-feature-1">
+                        <div class="feature-icon precision-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                                <path d="M12 1l3.09 6.26L22 9l-5.91 3.74L18.18 23 12 19.27 5.82 23l2.09-10.26L2 9l6.91-1.74L12 1z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Precision Engineering</h3>
+                        <p>Transform vague requests into specific, actionable prompts that deliver exactly what you need.</p>
+                    </div>
+                    <div class="feature-card gsap-feature-2">
+                        <div class="feature-icon instant-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Instant Results</h3>
+                        <p>Get improved prompts in seconds. No waiting, no complex setup - just better AI interactions immediately.</p>
+                    </div>
+                    <div class="feature-card gsap-feature-3">
+                        <div class="feature-icon ai-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>AI-Optimized</h3>
+                        <p>Built by prompt engineers who understand how to communicate effectively with all major AI models.</p>
+                    </div>
+                    <div class="feature-card gsap-feature-4">
+                        <div class="feature-icon outcomes-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Better Outcomes</h3>
+                        <p>Users report 3x better results from their AI tools after using professionally crafted prompts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="examples-section" id="examples">
+            <div class="container">
+                <h2 class="section-title gsap-examples-title">From Vague to <span class="gradient-text">Vivid</span></h2>
+                 <p class="section-subtitle gsap-examples-subtitle">See how Promptify transforms basic ideas into detailed instructions.</p>
+                <div class="example-cards-container">
+                     <div class="example-card gsap-example-1">
+                        <div class="example-content">
+                            <h4>Before</h4>
+                            <p>Create a blog post about productivity.</p>
+                        </div>
+                        <div class="example-content improved">
+                            <h4>After</h4>
+                            <p>Write a 1500-word blog post titled "10 Actionable Productivity Hacks for Remote Developers". Use a friendly but authoritative tone, include a short introduction and conclusion, and use markdown for headings and lists.</p>
+                        </div>
+                        <div class="cool-arrow">
+                            <div class="arrow-circle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 16L18 12L13 8M6 12H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="example-card gsap-example-2">
+                        <div class="example-content">
+                            <h4>Before</h4>
+                            <p>Help me with a marketing slogan.</p>
+                        </div>
+                        <div class="example-content improved">
+                            <h4>After</h4>
+                            <p>Generate 5 short, catchy marketing slogans for a new brand of eco-friendly, reusable coffee cups. The target audience is environmentally conscious millennials. The slogans should emphasize both style and sustainability.</p>
+                        </div>
+                        <div class="cool-arrow">
+                            <div class="arrow-circle">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 16L18 12L13 8M6 12H17.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title gsap-about-title">About <span class="gradient-text">Promptify</span></h2>
+                <p class="section-subtitle gsap-about-subtitle">Empowering creators, developers, and professionals to unlock the full potential of AI through expertly crafted prompts.</p>
+                
+                <div class="about-content">
+                    <div class="about-grid">
+                        <div class="about-text gsap-about-text">
+                            <h3>Our Mission</h3>
+                            <p>In the rapidly evolving world of artificial intelligence, the quality of your input determines the excellence of your output. Promptify bridges the gap between your ideas and AI's capabilities, transforming simple requests into comprehensive, detailed instructions that yield professional results.</p>
+                            
+                            <h3>Why Promptify?</h3>
+                            <p>Built by prompt engineers and AI specialists, our platform understands the nuances of effective AI communication. We've analyzed thousands of successful prompts to create a system that consistently delivers superior results across all major AI platforms.</p>
+                            
+                            <div class="about-stats">
+                                <div class="stat-item gsap-stat-1">
+                                    <div class="stat-number">50K+</div>
+                                    <div class="stat-label">Users Worldwide</div>
+                                </div>
+                                <div class="stat-item gsap-stat-2">
+                                    <div class="stat-number">1M+</div>
+                                    <div class="stat-label">Prompts Enhanced</div>
+                                </div>
+                                <div class="stat-item gsap-stat-3">
+                                    <div class="stat-number">300%</div>
+                                    <div class="stat-label">Better Results</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-visual gsap-about-visual">
+                            <div class="visual-card">
+                                <div class="visual-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h4>Innovation</h4>
+                                <p>Cutting-edge prompt engineering techniques</p>
+                            </div>
+                            
+                            <div class="visual-card">
+                                <div class="visual-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 10V3L4 14h7v7l9-11h-7z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <h4>Speed</h4>
+                                <p>Instant prompt optimization and enhancement</p>
+                            </div>
+                            
+                            <div class="visual-card">
+                                <div class="visual-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <h4>Quality</h4>
+                                <p>Consistently superior AI interactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <h2 class="section-title gsap-faq-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <div class="faq-accordion">
+                    <div class="faq-item gsap-faq-1">
+                        <button class="faq-question">
+                            <span>What is Promptify?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Promptify is an AI-powered tool that refines and enhances your text prompts to help you get more accurate, relevant, and creative results from AI models like GPT, Gemini, and others.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item gsap-faq-2">
+                        <button class="faq-question">
+                            <span>Which AI models are supported?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our prompts are designed to be universally effective across all major large language models, ensuring optimal performance across different AI platforms.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item gsap-faq-3">
+                        <button class="faq-question">
+                           <span>Is Promptify free to use?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! Promptify offers a comprehensive free experience that allows you to enhance and optimize your prompts for better AI interactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content gsap-footer">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span>Promptify</span>
+                        </div>
+                        <p class="footer-description">Transforming the future of AI interaction through innovative prompt engineering, precision, and uncompromising quality.</p>
+                        <div class="footer-social">
+                            <a href="https://x.com/Ilesh_009" class="social-link" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/IleshDevX" class="social-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ileshdevx/" class="social-link" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/@ileshpatel666" class="social-link" aria-label="YouTube">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links-section">
+                        <div class="footer-column">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home">🏠 Home</a></li>
+                                <li><a href="#editor">🛠️ Editor</a></li>
+                                <li><a href="#about">👥 About</a></li>
+                                <li><a href="#features">⭐ Features</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#examples">📝 Examples</a></li>
+                                <li><a href="#faq">❓ FAQ</a></li>
+                                <li><a href="#">📚 Documentation</a></li>
+                                <li><a href="#">🎓 Tutorials</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">📧 Contact Us</a></li>
+                                <li><a href="#">💬 Help Center</a></li>
+                                <li><a href="#">🔒 Privacy Policy</a></li>
+                                <li><a href="#">📋 Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Promptify By <span class="gradient-text">IleshDevX</span> All Rights Reserved. Crafted with ❤️ and Vanilla JavaScript 🚀</p>
+                    <div class="footer-badges">
+                        <span class="badge">🤖 AI-Powered</span>
+                        <span class="badge">🚀 1M+ Prompts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
